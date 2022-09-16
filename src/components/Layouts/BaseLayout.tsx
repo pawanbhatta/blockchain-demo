@@ -1,11 +1,10 @@
-import { Flex, Spacer } from "@chakra-ui/react";
+import { Flex, Spacer, Text } from "@chakra-ui/react";
+import NavBar from "../NavBar";
 
 function BaseLayout() {
   return (
     <>
-      <Flex className="navbar">
-        <ul></ul>
-      </Flex>
+      <NavBar />
     </>
   );
 }
