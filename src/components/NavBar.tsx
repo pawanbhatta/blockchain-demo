@@ -1,4 +1,4 @@
-import { Box, Flex, Link } from "@chakra-ui/react";
+import { Box, Button, Flex, Link } from "@chakra-ui/react";
 import { NavLink } from "react-router-dom";
 
 function NavBar() {
@@ -10,15 +10,15 @@ function NavBar() {
         background={"linear-gradient(90deg,red,yellow)"}
       >
         <Flex justifyContent={"space-evenly"}>
-          <Link as={NavLink} to="transactions">
+          <Button as={NavLink} to="transactions" background={"transparent"}>
             Transactions
-          </Link>
-          <Link as={NavLink} to="transactions">
+          </Button>
+          <Button as={NavLink} to="blocks" background={"transparent"}>
             Blocks
-          </Link>
-          <Link as={NavLink} to="transactions">
+          </Button>
+          <Button as={NavLink} to="/" background={"transparent"}>
             Blockchain
-          </Link>
+          </Button>
         </Flex>
       </Box>
     </>
