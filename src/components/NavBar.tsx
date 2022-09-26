@@ -19,6 +19,9 @@ function NavBar() {
           <Button as={NavLink} to="/" background={"transparent"}>
             Blockchain
           </Button>
+          <Button as={NavLink} to="/dapp" background={"transparent"}>
+            DApp
+          </Button>
         </Flex>
       </Box>
     </>
